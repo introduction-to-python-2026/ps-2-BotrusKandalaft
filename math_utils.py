@@ -1,10 +1,40 @@
 def find_max_number(num1, num2, num3):
-    pass  # Replace 'pass' with code
+  if num1 > num2 and num1 > num3:
+    return num1
+  if num2 > num1 and num2 > num3:
+     return num2
+  else:
+     return num3
+     max_num = find_max_number(num1, num2, num3)
+     print("The maximum number is:", max_num)
+
+
+
+
+
 
 def find_mean(num1, num2, num3):
-    pass  # Replace 'pass' with code
+    mean_value=(num1+num2+num3)/3
+    print("The mean is: ", mean_value)
+    return mean_value
+
+
+
+
+
+
+import math
+def find_mean(num1, num2, num3):
+    mean_value=(num1+num2+num3)/3
+    return mean_value
 
 def find_mean_std(num1, num2, num3):
     mean = find_mean(num1, num2, num3)
-    pass  # Replace 'pass' with code
+    variance = ((num1 - mean)**2 + (num2 - mean)**2 + (num3 - mean)**2)/3
+    std = variance**0.5
+
+    return mean, std
+
+    print("The mean is: ", mean_value)
+    print("The standard deviation is: ", std)
 
